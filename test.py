@@ -340,7 +340,7 @@ def main():
         cudnn.benchmark = True
         model = torch.nn.DataParallel(model)
 
-    pretr_dict = torch.load('/media/jhilik/DATA/irma/code/capsule/results/trained_model/model_epoch_15_32_3.pth')
+    pretr_dict = torch.load('results/trained_model/model_epoch_15_32_3.pth')
     
     pp = pretr_dict['state_dict']
 
