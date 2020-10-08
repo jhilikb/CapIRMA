@@ -31,7 +31,7 @@ import pathlib
 VISUALIZE = False  # visualize each image (for debugging)
 
 
-#train and test image directories
+
 is1=55
 scaler = transforms.Resize((is1, is1))
 #normalize = transforms.Normalize(mean=[0.5, 0.5, 0.5],std=[0.5, 0.5, 0.5])
