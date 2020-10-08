@@ -15,10 +15,14 @@
 7. Run the training script using
 sh train.sh
 This will train all 12 networks described in the paper one by one. If you want to train a single network, comment out all other lines. For example if you just want to train the best performing one use
-python3 main.py --pc 32 --nets 3 --primary-unit-size 3872 > f32_3.txt
-mv     results/trained_model/model_epoch_15.pth  results/trained_model/model_epoch_15_32_3.pth
+
+  python3 main.py --pc 32 --nets 3 --primary-unit-size 3872 > f32_3.txt
+
+  mv     results/trained_model/model_epoch_15.pth  results/trained_model/model_epoch_15_32_3.pth
+
 The training script will not only train the network, but also compute the classification scores and save it in the file f32_3.
 
 8. For testing using a trained model you can run. You can provide the parameters (pc,net,primary-unit size) in the same way as the training script. Alternatively you can change them in the argument list inside the code. Also provide the appropriate pretrained model in line 343.
+
 python3 test.py
 
