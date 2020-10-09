@@ -10,7 +10,7 @@
 
 5. Run the code imfileaug.py to generate augmented data. You can vary number of images (default is 1000) , alpha (default 1.01-1.1), beta (default 0-24) and rotation angles(default -10 to 10 degrees) as per your requirement.
 
-6. Create the training and test files 
+6. Create the training and test files by running imfileread.py and imfilegen.py respectively.
 
 7. Run the training script using
 sh train.sh
