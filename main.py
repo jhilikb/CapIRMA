@@ -378,7 +378,7 @@ def main():
     # writer.close()
     print(classification_report(orilab, predlab))
     print(precision_recall_fscore_support(orilab, predlab, average='weighted'))
-    print(roc_auc_score(y_true, y_scores, average='weighted'))
+    #print(roc_auc_score(y_true, y_scores, average='weighted'))
 
 
 if __name__ == "__main__":
