@@ -26,3 +26,7 @@ The training script will not only train the network, but also compute the classi
 
 python3 test.py
 
+9. Once you obtain the top class you can use any tool of your choice (radon, lbp, wavelet etc) for further shrinking the search space.
+
+10. For error code computation you can use the script provided at https://www.imageclef.org/
+   choose the tool according to the dataset you use. For example for 2008 dataset(12ktrain,1k test) use http://www.imageclef.org/system/files/evalscript_1.tgz
